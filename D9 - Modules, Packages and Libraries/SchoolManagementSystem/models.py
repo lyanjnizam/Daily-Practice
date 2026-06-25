@@ -1,10 +1,6 @@
-# Create classes for relevant roles
-
-# Student Teacher OtherStaff Janitor
-
 class Person:
 
-    school_name = "Nexperts"
+    school_name = 'Nexperts'
 
     def __init__(self, name, age):
         self.name = name
@@ -17,17 +13,14 @@ class Student(Person):
     def __init__(self, name, age, studentID):
         super().__init__(name, age)
         self.studentID = studentID
-
         self.grades = []
 
-    # add grades
     def add_grade(self, grade):
         self.grades.append(grade)
 
-    # polymorphism -- 
     def get_details(self):
         print('-----'*5)
-        print(f"Name: {self.name} | Student ID: {self.studentID}")
+        print(f"| Name: {self.name} | Student ID: {self.studentID} |")
         print('-----'*5)
         return self.name, self.studentID
     
@@ -36,7 +29,6 @@ class Teacher(Person):
     def __init__(self, name, age, teacherID):
         super().__init__(name, age)
         self.teacherID = teacherID
-
         self.subjects = []
 
     def add_subject(self, subject):
@@ -44,7 +36,7 @@ class Teacher(Person):
 
     def get_details(self):
         print('-----'*5)
-        print(f"Name: {self.name} | Teacher ID: {self.teacherID}")
+        print(f"| Name: {self.name} | Teacher ID: {self.teacherID} |")
         print('-----'*5)
         return self.name, self.teacherID
     

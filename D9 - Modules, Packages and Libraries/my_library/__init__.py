@@ -8,5 +8,5 @@ print("Welcome to my Library! ^_^")
 
 # all the imports will work automatically as well
 
-import my_lib.greet
-import my_lib.my_arthematic as ar
+import my_library.greet
+import my_library.my_arthematic

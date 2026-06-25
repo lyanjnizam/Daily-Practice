@@ -1,15 +1,14 @@
 import models
 import manager
-
 print('Welcome to the School Management System!')
 
 while True:
     print('-----'*5)
-    print("1 - to Add Student")
-    print("2 - to View Students")
-    print("3 - to Add Teacher")
-    print("4 - to View Teachers")
-    print("q or e - to Quit/Exit")
+    print("1 - Add Student")
+    print("2 - View Students")
+    print("3 - Add Teacher")
+    print("4 - View Teachers")
+    print("q or e - Quit/Exit")
     print('-----'*5)
 
     choice = input('choice: ')
