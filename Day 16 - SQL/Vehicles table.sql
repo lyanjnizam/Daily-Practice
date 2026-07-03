@@ -1,18 +1,18 @@
 -- create a database for a parking lot 
 
 CREATE TABLE Vehicles (
-	ID INT PRIMARY KEY,
-	Make_Model VARCHAR(100),
-	Wheels INT DEFAULT 4,
-	Doors INT DEFAULT 4,
-	Type VARCHAR(100)
+	id INT PRIMARY KEY,
+	make_model VARCHAR(100),
+	wheels INT DEFAULT 4,
+	doors INT DEFAULT 4,
+	type VARCHAR(100)
 );
 
 SELECT *
 FROM Vehicles;
 
 SELECT id, make_model, type
-FROM vehicles;
+FROM Vehicles;
 
 INSERT INTO
 Vehicles(id, make_model, wheels, doors, type) VALUES
@@ -23,24 +23,28 @@ Vehicles(id, make_model, wheels, doors, type) VALUES
 (5, 'Tesla S', 4, 4, 'Sedan');
 
 INSERT INTO
-vehicles(id, make_model, doors, wheels) VALUES
+Vehicles(id, make_model, doors, wheels) VALUES
 (6, 'Kawasaki S', 0, 2);
 
 INSERT INTO
-vehicles(id, make_model, doors, wheels, type) VALUES
+Vehicles(id, make_model, doors, wheels, type) VALUES
 (7, 'Honda Civic R', 2, 4, 'Sedan');
 
-UPDATE vehicles
+UPDATE Vehicles
 SET type = 'Sports'
 WHERE make_model = 'Kawasaki S';
 
 INSERT INTO
-vehicles(id, make_model, doors, wheels, type) VALUES
+Vehicles(id, make_model, doors, wheels, type) VALUES
 (8, 'Porche', 2, 4, 'Sports');
 
-DELETE FROM vehicles
+DELETE FROM Vehicles
 WHERE id = 8;
 
-DROP TABLE IF EXISTS alya_test;
+DROP TABLE IF EXISTS Alya_test;
 
-SELECT * FROM vehicles;
+INSERT INTO
+vehicles(id, make_model, type) VALUES
+(9, 'Proton Saga', 'Sedan');
+
+SELECT * FROM Vehicles;
