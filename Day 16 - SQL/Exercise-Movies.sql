@@ -20,7 +20,7 @@ VALUES
 INSERT INTO Directors(director_name, movie_id)
 VALUES
 ('Edry Abdul Halim', 1),
-('Chris Buck',2),
+('Chris Buck', 2),
 ('Nik Amir Mustapha', 3),
 ('Zulkarnain Azhar', 4);
 
