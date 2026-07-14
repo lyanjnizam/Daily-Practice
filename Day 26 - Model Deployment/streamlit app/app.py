@@ -1,7 +1,12 @@
 import streamlit as st
 
-st.title('MultiPage Streamlit App')
-st.write("Building multiple pages apps!")
+st.title('ML Model Predictions App')
+st.write("Choose and use apps for free!")
 
-st.page_link("pages\page_1.py", label= "Page 1")
-st.page_link("pages\page_2.py", label= "Page 2")
+st.divider()
+st.header("Home")
+
+st.set_page_config(page_title= "Assistant AI", layout= 'centered')
+
+st.page_link("pages/breast_cancer.py", label= "Breast Cancer App")
+st.page_link("pages/page_2.py", label= "Page 2")
