@@ -38,5 +38,17 @@ agree = st.checkbox("I agree to the T&C.")
 
 st.divider()
 
-dark_mode = st.toggle("Dark Mode")
-st.button("Click Here")
+show_password = st.toggle("SHOW PASSWORD")
+if show_password:
+    st.write("PASSWORD")
+else:
+    st.write("********")
+
+if st.button("Test"):
+    st.success("System Successful!")
+    st.info("Welcome to Streamlit!")
+    st.warning("STOP!!!")
+    st.error("PAGE ATTACKED!!!!!")
+
+if st.button("Balloons!"):
+    st.balloons()
