@@ -52,3 +52,16 @@ if st.button("Test"):
 
 if st.button("Balloons!"):
     st.balloons()
+
+if st.button("Snowww!!!"):
+    st.snow()
+
+import time
+if st.button("Coffee"):
+    with st.spinner("Making coffee..."):
+        time.sleep(3)
+        st.success("Coffee readyy!!")
+
+if st.button("Show table"):
+    st.toast("Table fetched!")
+    st.dataframe(coffee_table)
